@@ -8,7 +8,8 @@ int main() {
     // Posicionamento dos Navios
 
     // Declaração da matriz do tabuleiro 5x5
-    int tabuleiro[5][5] = {0};
+    // int tabuleiro[5][5] = {0};
+    int tabuleiro[10][10] = {0};
 
     // Posicionando navio vertical (valor 1)
         for (int linha = 0; linha < 3; linha++) {
