@@ -16,10 +16,12 @@ int main() {
         tabuleiro[linha][1] = 1;
     }
 
-    // Posicionando navio horizontal (valor 2)
-        for (int coluna = 2; coluna < 5; coluna++) {
-        tabuleiro[4][coluna] = 2;
-    }
+    // Posicionando navio horizontal (valor 1)
+      //  for (int coluna = 2; coluna < 5; coluna++) {
+     //   tabuleiro[4][coluna] = 2;
+    //}
+        for (int linha = 1; linha < 4; linha++) {
+         tabuleiro[linha][2] = 1;
 
     // Coordenada do navio vertical
     printf("Coordenadas do Navio Vertical (valor 1):\n");
@@ -34,9 +36,7 @@ int main() {
     }
 
     
-    // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
-    // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
-    // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.
+    
     // Sugestão: Exiba o tabuleiro completo no console, mostrando 0 para posições vazias e 3 para posições ocupadas.
 
     // Nível Mestre - Habilidades Especiais com Matrizes
