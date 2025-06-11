@@ -20,25 +20,48 @@ int main() {
       //  for (int coluna = 2; coluna < 5; coluna++) {
      //   tabuleiro[4][coluna] = 2;
     //}
-        for (int linha = 1; linha < 4; linha++) {
-         tabuleiro[linha][2] = 1;
+         for (int coluna = 5; coluna < 8; coluna++) {
+        tabuleiro[6][coluna] = 2;
+    }
 
     // Coordenada do navio vertical
-    printf("Coordenadas do Navio Vertical (valor 1):\n");
-    for (int linha = 0; linha < 3; linha++) {
-        printf("(%d, %d)\n", linha, 1);
+    //printf("Coordenadas do Navio Vertical (valor 1):\n");
+    //for (int linha = 0; linha < 3; linha++) {
+      //  printf("(%d, %d)\n", linha, 1);
+   // }
+
+    for (int coluna = 5; coluna < 8; coluna++) {
+        tabuleiro[6][coluna] = 2;
     }
 
     // Exibindo coordenadas do navio horizontal
-    printf("\nCoordenadas do Navio Horizontal (valor 2):\n");
-    for (int coluna = 2; coluna < 5; coluna++) {
-        printf("(%d, %d)\n", 4, coluna);
+   // printf("\nCoordenadas do Navio Horizontal (valor 2):\n");
+   // for (int coluna = 2; coluna < 5; coluna++) {
+     //   printf("(%d, %d)\n", 4, coluna);
+   // }
+   // Coordenadas dos navios valor 3
+      for (int i = 0; i < 3; i++) {
+        tabuleiro[0 + i][0 + i] = 3; 
+
+    // Coordenadas dos navios (valor 4)
+    for (int i = 0; i < 3; i++) {
+        tabuleiro[4 + i][9 - i] = 4;
+
+     // Coordenadas dos navios valor 1
+    printf("Coordenadas do Navio Vertical (valor 1):\n");
+    for (int linha = 1; linha < 4; linha++) {
+        printf("(%d, %d)\n", linha, 2);
     }
-
-    
-    
-    // Sugestão: Exiba o tabuleiro completo no console, mostrando 0 para posições vazias e 3 para posições ocupadas.
-
+   // valor 2
+    printf("\nCoordenadas do Navio Horizontal (valor 2):\n");
+    for (int coluna = 5; coluna < 8; coluna++) {
+        printf("(%d, %d)\n", 6, coluna);
+    }
+// valor 3
+    printf("\nCoordenadas do Navio Diagonal Principal ↘ (valor 3):\n");
+    for (int i = 0; i < 3; i++) {
+        printf("(%d, %d)\n", i, i);
+    }
     // Nível Mestre - Habilidades Especiais com Matrizes
     // Sugestão: Crie matrizes para representar habilidades especiais como cone, cruz, e octaedro.
     // Sugestão: Utilize estruturas de repetição aninhadas para preencher as áreas afetadas por essas habilidades no tabuleiro.
